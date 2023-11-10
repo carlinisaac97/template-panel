@@ -1,3 +1,4 @@
+
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
@@ -11,6 +12,8 @@ import { PrestadoresComponent } from './components/prestadores/prestadores.compo
 import { SolicitudesComponent } from './components/solicitudes/solicitudes.component';
 import { DocumentacionComponent } from './components/documentacion/documentacion.component';
 import { LiquidacionesComponent } from './components/liquidaciones/liquidaciones.component';
+import { AngularSvgIconModule } from 'angular-svg-icon';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -30,7 +33,8 @@ import { LiquidacionesComponent } from './components/liquidaciones/liquidaciones
   imports: [
     CommonModule,
     RouterModule,
-    // Puedes agregar otros módulos necesarios aquí
+    AngularSvgIconModule,
+    HttpClientModule
   ],
   exports: [
     NavbarComponent,
